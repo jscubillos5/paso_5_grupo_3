@@ -24,7 +24,8 @@ Public Class FormModifyStudent
     End Sub
 
     Private Sub FormModifyStudent_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        FormMenu.Show()
+        Dim formMenu = New FormMenu(True)
+        formMenu.Show()
     End Sub
 
     ' Cuando el usuario de click sobre la grilla, se buscaran los datos del estudiante, JSCG, UNAD, 20190601

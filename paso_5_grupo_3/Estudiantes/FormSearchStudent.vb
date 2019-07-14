@@ -7,7 +7,8 @@
     End Sub
 
     Private Sub FormSearchStudent_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        FormMenu.Show()
+        Dim formMenu = New FormMenu(True)
+        formMenu.Show()
     End Sub
 
     ' Permitir al usuario buscar un estudiante, por medio de los valores digitados, este tipo de busqueda se conoce como incremental, JSCG, UNAD, 20190601

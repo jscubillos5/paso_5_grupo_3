@@ -48,7 +48,8 @@
             MessageBox.Show("Fin por tiempo", "El tiempo para realizar la evaluación se ha terminado.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
             showValidationMessage = False
             Close()
-            FormMenu.Show()
+            Dim formMenu = New FormMenu(True)
+            formMenu.Show()
         End If
     End Sub
 
@@ -68,7 +69,8 @@
             Dim selection As DialogResult
             selection = MessageBox.Show("¿Está seguro?, esto cancelara el intento.", "Confirmar salir evaluación primer nivel", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
             If selection = vbYes Then
-                FormMenu.Show()
+                Dim formMenu = New FormMenu(True)
+                formMenu.Show()
             Else
                 e.Cancel = True
             End If

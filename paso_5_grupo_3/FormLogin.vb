@@ -23,7 +23,7 @@ Public Class FormLogin
             Else
                 ' Dar acceso al sistema, JSCG, UNAD, 20190601
                 Hide()
-                Dim formMenu = New FormMenu
+                Dim formMenu = New FormMenu(False)
                 formMenu.ShowDialog()
             End If
         End If

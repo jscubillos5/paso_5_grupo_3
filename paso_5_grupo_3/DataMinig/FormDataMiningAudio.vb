@@ -25,7 +25,8 @@
         AxWindowsMediaPlayerFormDataMiningAudio.Ctlcontrols.stop()
         ' Cerrar el formulario, JSCG, UNAD, 20190629
         Hide()
-        FormMenu.Show()
+        Dim formMenu = New FormMenu(True)
+        formMenu.Show()
     End Sub
 
 #End Region

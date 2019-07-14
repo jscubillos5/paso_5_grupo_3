@@ -24,7 +24,8 @@
     Private Sub FormDataMiningPDFReader_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         ' Cerrar el formulario, JSCG, UNAD, 20190629
         Hide()
-        FormMenu.Show()
+        Dim formMenu = New FormMenu(True)
+        formMenu.Show()
     End Sub
 
 #End Region

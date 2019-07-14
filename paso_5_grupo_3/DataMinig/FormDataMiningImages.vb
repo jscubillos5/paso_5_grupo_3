@@ -13,7 +13,8 @@
         TimerDataMiningImages.Stop()
         Hide()
         ' Cerrar el formulario, JSCG, UNAD, 20190629
-        FormMenu.Show()
+        Dim formMenu = New FormMenu(True)
+        formMenu.Show()
     End Sub
 
     Private Sub ButtonStart_Click(sender As Object, e As EventArgs) Handles ButtonStart.Click

@@ -2,6 +2,13 @@
 
 #Region "Funcionalidades del ménu principal"
 
+
+    Public Sub New(ByVal activeOptions As Boolean)
+        InitializeComponent()
+        DataMiningToolStripMenuItem.Enabled = activeOptions
+        EvaluationStep2ToolStripMenuItem.Enabled = activeOptions
+    End Sub
+
     Private Sub RegisterStudentsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RegisterStudentsToolStripMenuItem.Click
         Hide()
         ' Dar acceso al formulario seleciconado, JSCG, UNAD, 20190601

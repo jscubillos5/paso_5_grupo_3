@@ -68,7 +68,8 @@
                 e.Cancel = True
             End If
         Else
-            FormMenu.Show()
+            Dim formMenu = New FormMenu(True)
+            formMenu.Show()
         End If
     End Sub
 

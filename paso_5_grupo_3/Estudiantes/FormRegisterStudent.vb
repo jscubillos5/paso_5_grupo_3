@@ -106,7 +106,8 @@ Public Class FormRegisterStudent
 
     ' Al cerrar ir al formulario principal, JSCG, UNAD, 20190601
     Private Sub FormRegisterStudent_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        FormMenu.Show()
+        Dim formMenu = New FormMenu(True)
+        formMenu.Show()
     End Sub
 
     ' Limpiar el contenido del formulario, JSCG, UNAD, 20190601

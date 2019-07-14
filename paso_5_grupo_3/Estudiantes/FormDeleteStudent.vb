@@ -6,7 +6,8 @@ Public Class FormDeleteStudent
 
     ' Al cerrar ir al formulario principal, JSCG, UNAD, 20190601
     Private Sub FormDeleteStudent_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        FormMenu.Show()
+        Dim formMenu = New FormMenu(True)
+        formMenu.Show()
     End Sub
 
     Private Sub FormDeleteStudent_Load(sender As Object, e As EventArgs) Handles MyBase.Load
