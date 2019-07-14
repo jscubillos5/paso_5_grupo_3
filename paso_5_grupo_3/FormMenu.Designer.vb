@@ -58,25 +58,25 @@ Partial Class FormMenu
         'RegisterStudentsToolStripMenuItem
         '
         Me.RegisterStudentsToolStripMenuItem.Name = "RegisterStudentsToolStripMenuItem"
-        Me.RegisterStudentsToolStripMenuItem.Size = New System.Drawing.Size(148, 26)
+        Me.RegisterStudentsToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
         Me.RegisterStudentsToolStripMenuItem.Text = "Registrar"
         '
         'ModifyStudentsToolStripMenuItem
         '
         Me.ModifyStudentsToolStripMenuItem.Name = "ModifyStudentsToolStripMenuItem"
-        Me.ModifyStudentsToolStripMenuItem.Size = New System.Drawing.Size(148, 26)
+        Me.ModifyStudentsToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
         Me.ModifyStudentsToolStripMenuItem.Text = "Modificar"
         '
         'DeleteStudentsToolStripMenuItem
         '
         Me.DeleteStudentsToolStripMenuItem.Name = "DeleteStudentsToolStripMenuItem"
-        Me.DeleteStudentsToolStripMenuItem.Size = New System.Drawing.Size(148, 26)
+        Me.DeleteStudentsToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
         Me.DeleteStudentsToolStripMenuItem.Text = "Eliminar"
         '
         'SearchStudentsToolStripMenuItem
         '
         Me.SearchStudentsToolStripMenuItem.Name = "SearchStudentsToolStripMenuItem"
-        Me.SearchStudentsToolStripMenuItem.Size = New System.Drawing.Size(148, 26)
+        Me.SearchStudentsToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
         Me.SearchStudentsToolStripMenuItem.Text = "Consultar"
         '
         'DataMiningToolStripMenuItem
@@ -89,25 +89,25 @@ Partial Class FormMenu
         'DataMiningPDFReaderToolStripMenuItem
         '
         Me.DataMiningPDFReaderToolStripMenuItem.Name = "DataMiningPDFReaderToolStripMenuItem"
-        Me.DataMiningPDFReaderToolStripMenuItem.Size = New System.Drawing.Size(155, 26)
+        Me.DataMiningPDFReaderToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
         Me.DataMiningPDFReaderToolStripMenuItem.Text = "Lector PDF"
         '
         'DataMiningImagesToolStripMenuItem
         '
         Me.DataMiningImagesToolStripMenuItem.Name = "DataMiningImagesToolStripMenuItem"
-        Me.DataMiningImagesToolStripMenuItem.Size = New System.Drawing.Size(155, 26)
+        Me.DataMiningImagesToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
         Me.DataMiningImagesToolStripMenuItem.Text = "Imagenes"
         '
         'DataMiningAudioToolStripMenuItem
         '
         Me.DataMiningAudioToolStripMenuItem.Name = "DataMiningAudioToolStripMenuItem"
-        Me.DataMiningAudioToolStripMenuItem.Size = New System.Drawing.Size(155, 26)
+        Me.DataMiningAudioToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
         Me.DataMiningAudioToolStripMenuItem.Text = "Audio"
         '
         'DataMiningVideoToolStripMenuItem
         '
         Me.DataMiningVideoToolStripMenuItem.Name = "DataMiningVideoToolStripMenuItem"
-        Me.DataMiningVideoToolStripMenuItem.Size = New System.Drawing.Size(155, 26)
+        Me.DataMiningVideoToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
         Me.DataMiningVideoToolStripMenuItem.Text = "Video"
         '
         'EvaluationStep2ToolStripMenuItem

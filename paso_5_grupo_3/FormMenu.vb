@@ -2,7 +2,7 @@
 
 #Region "Funcionalidades del ménu principal"
 
-
+    ' Aplicar menu habilitado o deshabilitado, JSCG, UNAD, 20190714
     Public Sub New(ByVal activeOptions As Boolean)
         InitializeComponent()
         DataMiningToolStripMenuItem.Enabled = activeOptions
@@ -74,6 +74,35 @@
         Else
             MessageBox.Show("Usted ha cancelado el inicio de la evaluación.")
         End If
+    End Sub
+
+    ' Aplicar eventos de mouse al formulario, JSCG, UNAD, 20190714
+    Private Sub StudentsToolStripMenuItem_MouseEnter(sender As Object, e As EventArgs) Handles StudentsToolStripMenuItem.MouseEnter
+        StudentsToolStripMenuItem.ForeColor = Color.Green
+    End Sub
+
+    Private Sub StudentsToolStripMenuItem_MouseLeave(sender As Object, e As EventArgs) Handles StudentsToolStripMenuItem.MouseLeave
+        StudentsToolStripMenuItem.ForeColor = Color.FromKnownColor(KnownColor.ControlText)
+    End Sub
+
+    Private Sub DataMiningToolStripMenuItem_MouseEnter(sender As Object, e As EventArgs) Handles DataMiningToolStripMenuItem.MouseEnter
+        DataMiningToolStripMenuItem.ForeColor = Color.Green
+    End Sub
+
+    Private Sub DataMiningToolStripMenuItem_MouseLeave(sender As Object, e As EventArgs) Handles DataMiningToolStripMenuItem.MouseLeave
+        DataMiningToolStripMenuItem.ForeColor = Color.FromKnownColor(KnownColor.ControlText)
+    End Sub
+
+    Private Sub EvaluationStep2ToolStripMenuItem_MouseEnter(sender As Object, e As EventArgs) Handles EvaluationStep2ToolStripMenuItem.MouseEnter
+        EvaluationStep2ToolStripMenuItem.ForeColor = Color.Green
+    End Sub
+
+    Private Sub EvaluationStep2ToolStripMenuItem_MouseLeave(sender As Object, e As EventArgs) Handles EvaluationStep2ToolStripMenuItem.MouseLeave
+        EvaluationStep2ToolStripMenuItem.ForeColor = Color.FromKnownColor(KnownColor.ControlText)
+    End Sub
+
+    Private Sub StudentsToolStripMenuItem_MouseHover(sender As Object, e As EventArgs)
+        StudentsToolStripMenuItem.ForeColor = Color.Green
     End Sub
 
 #End Region
