@@ -79,6 +79,22 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataMinig\FormDataMiningAudio.Designer.vb" />
+    <Compile Include="DataMinig\FormDataMiningAudio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataMinig\FormDataMiningImages.Designer.vb" />
+    <Compile Include="DataMinig\FormDataMiningImages.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataMinig\FormDataMiningPDFReader.Designer.vb" />
+    <Compile Include="DataMinig\FormDataMiningPDFReader.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataMinig\FormDataMiningVideo.Designer.vb" />
+    <Compile Include="DataMinig\FormDataMiningVideo.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Data\DataClassesSTUDENTS.designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -109,6 +125,18 @@
       <DependentUpon>FormSearchStudent.vb</DependentUpon>
     </Compile>
     <Compile Include="Estudiantes\FormSearchStudent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Evaluations\FormLevel1Assessment.Designer.vb" />
+    <Compile Include="Evaluations\FormLevel1Assessment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Evaluations\FormLevel2Assessment.Designer.vb" />
+    <Compile Include="Evaluations\FormLevel2Assessment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Evaluations\FormShowResults.Designer.vb" />
+    <Compile Include="Evaluations\FormShowResults.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormLogin.vb">
@@ -149,6 +177,10 @@
     <None Include="Data\DataClassesSTUDENTS.dbml.layout">
       <DependentUpon>DataClassesSTUDENTS.dbml</DependentUpon>
     </None>
+    <EmbeddedResource Include="DataMinig\FormDataMiningAudio.resx" />
+    <EmbeddedResource Include="DataMinig\FormDataMiningImages.resx" />
+    <EmbeddedResource Include="DataMinig\FormDataMiningPDFReader.resx" />
+    <EmbeddedResource Include="DataMinig\FormDataMiningVideo.resx" />
     <EmbeddedResource Include="Estudiantes\FormDeleteStudent.resx">
       <DependentUpon>FormDeleteStudent.vb</DependentUpon>
     </EmbeddedResource>
@@ -161,6 +193,9 @@
     <EmbeddedResource Include="Estudiantes\FormSearchStudent.resx">
       <DependentUpon>FormSearchStudent.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Evaluations\FormLevel1Assessment.resx" />
+    <EmbeddedResource Include="Evaluations\FormLevel2Assessment.resx" />
+    <EmbeddedResource Include="Evaluations\FormShowResults.resx" />
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.vb</DependentUpon>
     </EmbeddedResource>
@@ -214,5 +249,25 @@
   <ItemGroup>
     <None Include="Images\IV View_Image.png" />
   </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

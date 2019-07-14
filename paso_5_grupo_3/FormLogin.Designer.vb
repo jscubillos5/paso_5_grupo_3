@@ -30,6 +30,7 @@ Partial Class FormLogin
         Me.ButtonLogin = New System.Windows.Forms.Button()
         Me.PictureBoxImageLogin = New System.Windows.Forms.PictureBox()
         Me.LinkLabelCopyright = New System.Windows.Forms.LinkLabel()
+        Me.LabelUserHelp = New System.Windows.Forms.Label()
         CType(Me.PictureBoxImageLogin, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -96,12 +97,22 @@ Partial Class FormLogin
         Me.LinkLabelCopyright.TabStop = True
         Me.LinkLabelCopyright.Text = "Derechos de autor © 2019 por Juan Cubillos. Todos los derechos reservados"
         '
+        'LabelUserHelp
+        '
+        Me.LabelUserHelp.AutoSize = True
+        Me.LabelUserHelp.Location = New System.Drawing.Point(205, 87)
+        Me.LabelUserHelp.Name = "LabelUserHelp"
+        Me.LabelUserHelp.Size = New System.Drawing.Size(139, 34)
+        Me.LabelUserHelp.TabIndex = 6
+        Me.LabelUserHelp.Text = "Usuario: JCUBILLOS" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Contraseña: 12345"
+        '
         'FormLogin
         '
         Me.AcceptButton = Me.ButtonLogin
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(517, 186)
+        Me.Controls.Add(Me.LabelUserHelp)
         Me.Controls.Add(Me.LinkLabelCopyright)
         Me.Controls.Add(Me.PictureBoxImageLogin)
         Me.Controls.Add(Me.ButtonLogin)
@@ -129,4 +140,5 @@ Partial Class FormLogin
     Friend WithEvents ButtonLogin As Button
     Friend WithEvents PictureBoxImageLogin As PictureBox
     Friend WithEvents LinkLabelCopyright As LinkLabel
+    Friend WithEvents LabelUserHelp As Label
 End Class
